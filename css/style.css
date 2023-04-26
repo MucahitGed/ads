@@ -1,0 +1,339 @@
+:root{
+    --blue: #4285F4;
+    --green: #0F9D58;
+    --red : #DB4437;
+    --yellow : #F4B400;
+    --darkblue : #01243d;
+}
+html{
+    font-size: 10px;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* header */
+.main_page{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: linear;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-image: url("../files/bgg.jpg");
+}
+.main_page_darker{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.left_navbar{
+    font-size: 2.5rem;
+}
+.left_a{
+    color: white;
+}
+.right_bar{
+    font-size: 2rem;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.right_bar a{
+    padding: 2px;
+    border-bottom: 2px solid transparent;
+}
+.right_bar a:hover{
+    border-bottom: 2px solid #4285F4;
+    color: #4285F4;
+}
+.progress-container {
+    margin-top: 14px;
+    width: 100%;
+    height: 3px;
+    background: #ccc;
+  }
+  
+  .progress-bar {
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(15,157,88,1) 33%, rgba(219,68,55,1) 66%, rgba(244,180,0,1) 89%);
+}
+
+
+/* main */
+.main_content{
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.content_header{
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    font-size: 5rem;
+    background-color: rgb(66,133,244);
+    background-image: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(15,157,88,1) 33%, rgba(219,68,55,1) 66%, rgba(244,180,0,1) 89%);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.typewriting{
+    margin: 20px 0;
+    z-index: 100;
+    font-size: 3rem;
+}
+.main_content a{
+    z-index: 100;
+}
+.contactBtn{
+    z-index: 100;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.contactBtn:hover{
+    background-color: var(--darkblue);
+    border: 1px solid var(--darkblue);
+}
+/* services */
+.services{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #e8e8e8;;
+    justify-content: center;
+}
+.services h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.products_main{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.services .products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products .product{
+    height: 400px;
+    width: 350px;
+    margin: 15px;
+    color: #fff;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all;
+    transition-duration: 1s;
+}
+.product:hover{
+    scale: 1.1;
+}
+.product1{
+    background-color: var(--darkblue);
+}
+.product2{
+    background-color: var(--green);
+}
+.product3{
+    background-color: var(--yellow);
+}
+.pro_header{
+    font-size: 2.5rem;
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.pro_ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.pro_ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+li i{
+    margin-right: 5px;
+}
+.contactBtn2{
+    margin-top: 150px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: #fff;
+    border-radius: 10px;
+}
+.product1 .contactBtn2:hover{
+    background-color: #F4B400;
+    color: #fff;
+}
+.product2 .contactBtn2:hover{
+    background-color: var(--darkblue);
+    color: #fff;
+}
+.product3 .contactBtn2:hover{
+    background-color: var(--darkblue);
+    color: #fff;
+}
+/* targets */
+.targets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01243d;
+    height: 75vh;
+    width: 100%;
+}
+.targets_div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+}
+.targets h1{
+    font-size: 3.2rem;
+    color: #f0f0f0;
+    font-weight: 700;
+}
+.targets_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%;
+}
+.target{
+    width: 20%;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+.big_target{
+    height: 350px;
+}
+.sm_target{
+    height: 320px;
+}
+.targetContact{
+    width: 20%;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+/* features */
+.features{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e8;
+}
+.features_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+    width: 90%;
+}
+.features_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature{
+    width: 20%;
+}
+.features h1{
+    font-size: 3.2rem;
+}
+.feature_font{
+    font-size: 4.5rem;
+    color: #4285F4;
+}
+.feature_header{
+    font-size: 2.4rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.feature_content{
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
