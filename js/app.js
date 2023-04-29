@@ -1,7 +1,7 @@
-// const loadingClose = setTimeout(()=>{
-//     document.querySelector(".store-container").style.display = "none";
-//     document.querySelector(".main").style.display = "block"; 
-// } , 5000)
+const submitBtn = document.querySelector(".submitBtn")
+const contact_form = document.querySelector(".contact-form")
+const contact_output = document.querySelector(".contact-output")
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -79,3 +79,28 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+const namee = document.querySelector("#name")
+const email = document.querySelector("#email")
+const message_input = document.querySelector(".message-input")
+
+contactCheck()
+
+function contactCheck(){
+  contact_form.addEventListener("submit" , (e)=>{
+    e.preventDefault()
+    if(namee.value == "" || email.value == "" || message_input.value == ""){
+      console.log("not worked")
+      contact_output.innerHTML = "Please Fill Everything"
+      contact_output.classList.add("notok")
+    }else{
+      contact_output.innerHTML = "Thanks to Contact Us"
+      contact_output.classList.remove("notok")
+      contact_output.classList.add("ok")
+      console.log("worked")
+    }
+  
+  })
+}
+
+    
